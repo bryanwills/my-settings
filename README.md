@@ -1,2 +1,3 @@
-# osx-settings
-My OSX settings
+# My OSX settings, for my future self
+
+## Mouse
