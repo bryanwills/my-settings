@@ -1,5 +1,4 @@
-# My OSX settings, for my future self
-
+# OSX settings
 ## Mouse settings
 ### SmoothScroll
 ![](https://github.com/mmazzarolo/osx-settings/blob/master/smoothscroll.png)
@@ -21,3 +20,17 @@
 - A decent version of Karabiner for Sierra
 - `§` to ` on Macbook keyboard
 - Tab switcher (CMD + TAB) for Chrome tabs (et similia)
+
+# VSCode settings
+```javascript
+{
+    "editor.fontFamily": "Monaco",
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "javascript.validate.enable": false,
+    "files.associations": {
+        "*.jsx": "javascript"
+    },
+    "flow.path": "node_modules/flow-bin/vendor/flow",
+    "eslint.autoFixOnSave": true
+}
