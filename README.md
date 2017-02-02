@@ -34,10 +34,23 @@ https://tma02.github.io/baritone/
     "editor.fontFamily": "Monaco",
     "editor.fontSize": 13,
     "editor.tabSize": 2,
+    "editor.rulers": [80],
     "javascript.validate.enable": false,
     "files.associations": {
         "*.jsx": "javascript"
     },
     "flow.path": "node_modules/flow-bin/vendor/flow",
-    "eslint.autoFixOnSave": true
-}
+    "eslint.autoFixOnSave": true,
+    "terminal.integrated.fontFamily": "Monaco",
+    "terminal.integrated.fontSize": 12,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/build": true,
+      "**/ios": true,
+      "**/android": true
+    },
+    "color-highlight.markerType": "underline",
+    "editor.snippetSuggestions": "bottom",
+    "editor.wordBasedSuggestions": false
+  }
