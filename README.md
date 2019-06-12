@@ -1,4 +1,7 @@
 # OSX settings
+## Alfred
+
+
 ## Audio settings
 ### Mac Ear Control (control the Mac music using the headphones controls)  
 https://github.com/7hil/mac_ear_control
