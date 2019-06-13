@@ -1,5 +1,6 @@
 # OSX settings
 ## Alfred
+![](./alfred-workflows.png)
 
 
 ## Audio settings
