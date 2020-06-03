@@ -7,9 +7,6 @@
 ### Mac Ear Control (control the Mac music using the headphones controls)  
 https://github.com/7hil/mac_ear_control
 
-### Spotify mini-player
-https://tma02.github.io/baritone/
-
 ## Mouse settings
 ### SmoothScroll
 ![](./smoothscroll.png)
