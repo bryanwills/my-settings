@@ -17,4 +17,4 @@ fi
 ## Keyboard setup
 
 1. Install [SharpKeys](https://www.randyrants.com/category/sharpkeys/) and load the [sharpkeys-config.skl](./sharpkeys-config.skl) to map the modifier keys at the registry level. Then press "Write to Registry" and logout. 
-2. Install [AutoHotkey](), run the [autohotkey-config.ahk](./autohotkey-config.ahk), and [make it start automatically](https://www.autohotkey.com/docs/FAQ.htm#Startup).
+2. Install [AutoHotkey]((https://www.autohotkey.com), run the [autohotkey-config.ahk](./autohotkey-config.ahk), and [make it start automatically](https://www.autohotkey.com/docs/FAQ.htm#Startup).
