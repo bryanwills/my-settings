@@ -17,6 +17,7 @@ fi
 ## Keyboard setup
 
 #### 1. SharpKeys
+
 Install [SharpKeys](https://www.randyrants.com/category/sharpkeys/) and load the [sharpkeys-config.skl](./sharpkeys-config.skl) to map the modifier keys at the registry level. Then press "Write to Registry" and logout. 
 The config maps:
 | From        | To           |
@@ -28,4 +29,6 @@ The config maps:
 
 The right Alt to right Ctrl mapping is for using Alt + IJKL as cursors keys (will be handled in AutoHotkey below). Without this remapping sometimes the cursor keys usage would end up selecting a menu (which is the default Alt behaviour in windows). 
 
-2. Install [AutoHotkey]((https://www.autohotkey.com), run the [autohotkey-config.ahk](./autohotkey-config.ahk), and [make it start automatically](https://www.autohotkey.com/docs/FAQ.htm#Startup).
+#### 2. AutoHotkey 
+
+Install [AutoHotkey](https://www.autohotkey.com), run the [autohotkey-config.ahk](./autohotkey-config.ahk), and [make it start automatically](https://www.autohotkey.com/docs/FAQ.htm#Startup).
