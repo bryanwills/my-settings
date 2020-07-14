@@ -27,7 +27,7 @@ The config maps:
 | Left Windows | Left Alt      | 
 | Right Alt   | Right Ctrl |
 
-The right Alt to right Ctrl mapping is for using Alt + IJKL as cursors keys (will be handled in AutoHotkey below). Without this remapping sometimes the cursor keys usage would end up selecting a menu (which is the default Alt behaviour in windows). 
+The right Alt to right Ctrl mapping is for using Alt + IJKL as cursors keys (will be handled in AutoHotkey below). Without this remapping sometimes the cursor keys usage would end up selecting a menu (which is the default Alt behaviour in windows). Sometimes the Left Alt will still cause some bleeps though, so in the future I might neet to swap it too. 
 
 #### 2. AutoHotkey 
 
