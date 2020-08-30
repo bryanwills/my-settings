@@ -1,0 +1,44 @@
+[user]
+        email = mazzarolomatteo@gmail.com
+        name = mmazzarolo
+
+[alias]
+        l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+        aliases = "!git config -l | grep alias | cut -c 7-"
+        graph = git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        s = status -s
+        co = checkout
+        cob = checkout -b
+        coo = !git fetch && git checkout
+        st = status
+        aa = add -A .
+        cm = commit -m
+        aacm = !git add -A . && git commit -m
+        master = !git checkout master && git pull origin
+        sneak = commit -a --amend --no-edit
+
+[pull]
+        rebase = false
+
+[push]
+        default = current
+
+[core]
+        pager = diff-so-fancy | less --tabs=2 -RFX
+
+[color]
+        ui = true
+
+[color "diff-highlight"]
+        oldNormal = red bold
+        oldHighlight = red bold 52
+        newNormal = green bold
+        newHighlight = green bold 22
+
+[color "diff"]
+        meta = 11
+        frag = magenta bold
+        commit = yellow bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse

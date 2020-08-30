@@ -43,9 +43,12 @@ PROMPT='${path_string} ${prompt_string} %{$reset_color%}'
 
 # Set tab title to current directory and set window title to full path on iTerm
 # the $PROMPT_COMMAND environment variable is executed every time a command is run
-if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033]1;${PWD##*/}\007" && echo -ne "\033]2;${PWD}\007"; ':"$PROMPT_COMMAND";
-fi
+DISABLE_AUTO_TITLE="true"
+tab_title() {
+  # sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
+add-zsh-hook precmd tab_title
 
 # Env setup
 export ANDROID_HOME="/Users/matteomazzarolo/Library/android/sdk"
