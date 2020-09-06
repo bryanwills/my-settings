@@ -6,6 +6,7 @@ autoload -Uz compinit && compinit # TODO: Default autocomplete
 compdef w=-redirect-,-default-,-default- # Gives <tab> autocomplete
 bindkey '^[[A' history-substring-search-up # Searches in history with up arrow
 bindkey '^[[B' history-substring-search-down # Searches in history with down arrow
+zstyle ':completion:*' menu select # Shows current selection in autocomplete
 
 # History
 HISTFILE=~/.histfile # Lines of history to keep in memory for current session
