@@ -15,7 +15,7 @@
         aacm = !git add -A . && git commit -m
         master = !git checkout master && git pull origin
         sneak = commit -a --amend --no-edit
-        clean = !git branch --merged | grep -v \"\\*\" | grep -v master | grep -v develop | xargs -n 1 git branch -d
+        sweep = !git branch --merged | grep -v \"\\*\" | grep -v master | grep -v develop | xargs -n 1 git branch -d
 
 [pull]
         rebase = false
