@@ -19,6 +19,7 @@
   ],
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
+  "eslint.migration.2_x": "off",
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
