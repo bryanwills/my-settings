@@ -21,19 +21,6 @@ setopt inc_append_history # Immediately append to the history file, not just whe
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 
-# Fixes delete key behaviour
-bindkey "^[[3~" delete-char
-bindkey "^[3;5~" delete-char
-
-# Fixes home and end keys behaviours
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
-
-# Fixes iTerm backward-kill-line behaviour
-# For reference: https://stackoverflow.com/a/29403520
-bindkey "^U" backward-kill-line 
-bindkey "^X\\x7f" backward-kill-line
-
 # Themed prompt
 autoload colors; colors;
 setopt prompt_subst
