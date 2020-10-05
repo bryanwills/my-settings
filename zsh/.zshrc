@@ -45,6 +45,7 @@ export ANDROID_SDK="/Users/matteomazzarolo/Library/android/sdk"
 # Aliases
 alias la="command ls -laG"
 alias ls="command ls -CG"
-alias grep="command grep --color=auto"
 alias dc="docker-compose"
 alias emulator="$ANDROID_HOME/emulator/emulator"
+alias cat="bat --tabs=2"
+alias grep="rg --color=auto"
