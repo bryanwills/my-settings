@@ -2,21 +2,17 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": false
   },
-  "editor.cursorSmoothCaretAnimation": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.renderIndentGuides": true,
-  "editor.rulers": [
-    80
-  ],
+  "editor.glyphMargin": false,
+  "editor.occurrencesHighlight": false,
+  "editor.renderIndentGuides": false,
+  "editor.rulers": [80],
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.wordBasedSuggestions": false,
   "editor.wordWrap": "on",
-  "emmet.excludeLanguages": [
-    "markdown",
-    "typescript",
-    "javascript"
-  ],
+  "emmet.excludeLanguages": ["markdown", "typescript", "javascript"],
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
   "eslint.migration.2_x": "off",
@@ -33,8 +29,10 @@
     "env-*": true
   },
   "git.enableSmartCommit": true,
+  "javascript.suggest.names": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
+  "jsannotations.enabled": true,
   "openInTerminal.app": "iTerm",
   "problems.decorations.enabled": true,
   "search.exclude": {
@@ -56,10 +54,11 @@
   "search.useIgnoreFiles": false,
   "terminal.integrated.shell.osx": "zsh",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Nord",
+  "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "ayu",
   "workbench.settings.editor": "json",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": false
 }
