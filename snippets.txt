@@ -1,0 +1,37 @@
+# Show current git SHA
+git rev-parse HEAD
+
+# Git pull submodule latest version
+git submodule update --recursive --remote
+
+# List all globally linked modules
+npm ls -g --depth=0 --link=true
+
+# Show free space
+diskutil info / | grep "Free Space"
+
+# Remove node_modules dirs that haven't been touched in the last 120 days
+# recursively starting from the current dir
+find . -name "node_modules" -type d -mtime +120 | xargs rm -rf
+
+# Delete the merged branches of all the repos recursively starting from 
+# the current dir
+for d in */; do cd $d; echo WORKING ON $d; git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d; cd ..; done;
+
+# Update and clean homebrew
+brew update && brew upgrade && brew cleanup
+
+# Clean CocoaPod caches
+rm -rf "${HOME}/Library/Caches/CocoaPods"
+
+# Delete old XCode simulators
+xcrun simctl delete unavailable
+
+# Clean XCode archives, logs, and derived data
+rm -rf ~/Library/Developer/Xcode/Archives
+rm -rf ~/Library/Developer/Xcode/DerivedData
+rm -rf ~~/Library/Developer/Xcode/iOS Device Logs/
+
+# Removed unused docker volumes
+docker volume prune
+
