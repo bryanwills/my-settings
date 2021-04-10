@@ -35,3 +35,11 @@ rm -rf ~~/Library/Developer/Xcode/iOS Device Logs/
 # Removed unused docker volumes
 docker volume prune
 
+# Resize image canvas anchoring to center
+convert ./input.png -gravity center -background transparent -extent 400x400 output.png
+
+# Resize + replace all images given a pattern
+magick mogrify -resize 500x500 -quality 100 -path ./ ./*.png 
+
+# Convert SVG keeping transparency for a specific color
+convert input.png output.png -fuzz XX% -transparent white
