@@ -21,14 +21,6 @@ setopt inc_append_history # Immediately append to the history file, not just whe
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 
-# Themed prompt
-autoload colors; colors;
-setopt prompt_subst
-local host_name="%{$fg[green]%}赵"
-local path_string="%{$fg[cyan]%}%~"
-local prompt_string="%{$fg[yellow]%}% »"
-PROMPT='${path_string} ${prompt_string} %{$reset_color%}'
-
 # Set tab title to current directory and set window title to full path on iTerm
 # the $PROMPT_COMMAND environment variable is executed every time a command is run
 DISABLE_AUTO_TITLE="true"
@@ -41,9 +33,17 @@ add-zsh-hook precmd tab_title
 # Env setup
 export ANDROID_HOME="/Users/matteomazzarolo/Library/android/sdk"
 export ANDROID_SDK="/Users/matteomazzarolo/Library/android/sdk"
+export DELTA_NAVIGATE="1 git diff" # Fixes "Pattern not found (press RETURN)" when using Delta
 
 # Aliases
 alias la="command ls -laG"
 alias ls="command ls -CG"
 alias dc="docker-compose"
 alias emulator="$ANDROID_HOME/emulator/emulator"
+
+
+# Themed prompt using starship
+eval "$(starship init zsh)"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/bitcomplete bit
