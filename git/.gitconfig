@@ -1,13 +1,13 @@
 [user]
-    email = mazzarolomatteo@gmail.com
-    name = mmazzarolo
+    email = 
+    name = 
 
 [alias]
     l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
     aliases = "!git config -l | grep alias | cut -c 7-"
     graph = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     s = status -s
-    co = checkout
+    c = checkout
     cob = checkout -b
     coo = !git fetch && git checkout
     st = status
@@ -15,6 +15,9 @@
     cm = commit -m
     aacm = !git add -A . && git commit -m
     master = !git checkout master && git pull origin
+    main = !git checkout main && git pull origin
+    m = !git rev-parse --abbrev-ref origin/HEAD | cut -c8- | xargs -n 1 git checkout && git pull origin $(git rev-parse --abbrev-ref HEAD)
+    pm = !git pull origin $(git rev-parse --abbrev-ref HEAD)
     sneak = commit -a --amend --no-edit
     sweep = !git branch --merged | grep -v \"\\*\" | grep -v master | grep -v develop | xargs -n 1 git branch -d
 
@@ -22,8 +25,8 @@
     rebase = false
 
 [push]
-    default = current
-
+	default = current
+    
 [core]
     pager = delta
 
@@ -32,7 +35,6 @@
     minus-color = "#340001"
     syntax-theme = Monokai Extended
     line-numbers = true
-	navigate = true
 
 [interactive]
     diffFilter = delta --color-only
