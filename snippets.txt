@@ -43,3 +43,12 @@ magick mogrify -resize 500x500 -quality 100 -path ./ ./*.png
 
 # Convert SVG keeping transparency for a specific color
 convert input.png output.png -fuzz XX% -transparent white
+
+# Resize image to multiple sizes
+convert input.png -define icon:auto-resize=128,64,32,24,16 output.ico
+
+# Scale video w by 50% and h by 20%
+ffmpeg -i input.mov -vf "scale=iw*.5:ih*.2" output.mp4
+
+# Scale video keeping aspect ratio
+ffmpeg -i input.mov -vf "scale=1280:trunc(ow/a/2)*2" input.mp4

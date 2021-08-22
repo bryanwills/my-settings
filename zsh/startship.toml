@@ -1,0 +1,16 @@
+# Store in <home>/.config/starship.toml
+
+# Use custom format
+format = """
+$directory\
+$git_branch
+[»](yellow) """
+
+[directory]
+truncate_to_repo = false
+style="cyan"
+
+[git_branch]
+format="[$branch]($style)"
+style="dimmed"
+symbol=""
