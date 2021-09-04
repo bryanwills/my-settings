@@ -55,6 +55,12 @@
   "terminal.integrated.shell.osx": "zsh",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "[Subliminal Next]": {
+      "gitDecoration.ignoredResourceForeground":"#76879670",
+      "scrollbarSlider.background": "#76879670"
+    }
+  },
   "workbench.colorTheme": "Nord",
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "ayu",
