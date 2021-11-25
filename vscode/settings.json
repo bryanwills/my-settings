@@ -49,7 +49,10 @@
     "**/ios": true,
     "**/node_modules": true,
     "**/public": true,
-    "**/vendor": true
+    "**/vendor": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "**/npm-shrinkwrap.json": true
   },
   "search.useIgnoreFiles": false,
   "terminal.integrated.shell.osx": "zsh",
