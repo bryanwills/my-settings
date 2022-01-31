@@ -38,7 +38,6 @@ export DELTA_NAVIGATE="1 git diff" # Fixes "Pattern not found (press RETURN)" wh
 # Aliases
 alias la="command ls -laG"
 alias ls="command ls -CG"
-alias dc="docker-compose"
 alias emulator="$ANDROID_HOME/emulator/emulator"
 
 
@@ -46,4 +45,3 @@ alias emulator="$ANDROID_HOME/emulator/emulator"
 eval "$(starship init zsh)"
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/bitcomplete bit
